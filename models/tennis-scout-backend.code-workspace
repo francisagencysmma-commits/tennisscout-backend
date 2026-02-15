@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../tennis-scout-backend"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../config"
+		},
+		{
+			"path": "../routes"
+		},
+		{
+			"path": "../middleware"
+		},
+		{
+			"path": "../uploads"
+		},
+		{
+			"path": "../node_modules"
+		}
+	]
+}
