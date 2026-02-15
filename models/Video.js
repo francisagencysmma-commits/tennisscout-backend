@@ -10,27 +10,24 @@ const videoSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  descripcion: String,
+  descripcion: {
+    type: String,
+    default: ''
+  },
   url: {
     type: String,
     required: true
   },
-  thumbnail: String,
-  duracion: String,
-  tags: [String],
+  duracion: {
+    type: Number,
+    default: 0
+  },
   vistas: {
     type: Number,
     default: 0
-  },
-  rating: {
-    type: Number,
-    default: 0
-  },
-  cloudinaryId: String,
-  createdAt: {
-    type: Date,
-    default: Date.now
   }
+}, {
+  timestamps: true
 });
 
 module.exports = mongoose.model('Video', videoSchema);
