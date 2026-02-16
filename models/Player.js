@@ -8,6 +8,8 @@ const playerSchema = new mongoose.Schema({
   edad: { type: Number },
   pais: { type: String },
   utrRating: { type: Number, default: 0 },
+  isPremium: { type: Boolean, default: false },
+  premiumUntil: { type: Date, default: null },
   
   // Foto de perfil
   fotoPerfil: { type: String, default: '' },
