@@ -21,6 +21,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/tennissco
   .catch(err => console.error('❌ Error MongoDB:', err));
 
 // Rutas
+app.use('/api/video-analysis', require('./routes/videosnalysis'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/players', require('./routes/players'));
 app.use('/api/videos', require('./routes/videos'));
